@@ -1,0 +1,25 @@
+<br>
+<form #f (ngSubmit)="onSubmit(f)" class="form-horizontal">
+    <div class="form-group">
+        <div class="col-sm-12">
+            <label for="nome" class="control-label">Nome</label>
+        </div>
+        <div class="col-sm-12">
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome">
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <label for="descricao">Descrição</label>
+    </div>
+    <div class="col-sm-12">
+        <input type="text" name="descricao" id="descricao" class="form-control" placeholder="Descrição">
+    </div>
+
+    <div class="col-sm-12">
+        <label for="email">E-mail contato</label>
+    </div>
+    <div class="col-sm-12">
+        <input type="text" name="email" id="email" placeholder="e-mail contato" class="form-control">
+    </div>
+    <button type="sbmit" class="btn btn-primary">Submeter</button>
+</form>

@@ -1,0 +1,177 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+<<<<<<< HEAD
+    "exemplos": {
+=======
+    "senai": {
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+<<<<<<< HEAD
+            "outputPath": "dist/exemplos",
+=======
+            "outputPath": "dist/senai",
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+<<<<<<< HEAD
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+=======
+              "src/styles.css"
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+<<<<<<< HEAD
+            "browserTarget": "exemplos:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "exemplos:build:production"
+=======
+            "browserTarget": "senai:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "senai:build:production"
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+<<<<<<< HEAD
+            "browserTarget": "exemplos:build"
+=======
+            "browserTarget": "senai:build"
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+<<<<<<< HEAD
+    "exemplos-e2e": {
+=======
+    "senai-e2e": {
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+      "root": "e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
+            "devServerTarget": "exemplos:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "exemplos:serve:production"
+=======
+            "devServerTarget": "senai:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "senai:serve:production"
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+<<<<<<< HEAD
+  "defaultProject": "exemplos"
+=======
+  "defaultProject": "senai"
+>>>>>>> e65c21f411b1b323f9f9db68ebb8fe0bc0bf4ae7
+}
