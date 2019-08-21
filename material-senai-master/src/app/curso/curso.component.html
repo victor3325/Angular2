@@ -14,7 +14,7 @@
             <label class="control-label" for="descricao">Descrição</label>
         </div>
         <div class="col-sm-12">
-            <input class="form-control" type="text" name="descricao" id="descricao" placeholder="Descrição" #descricao="ngModel" [(ngModel)]="cursos.descricao">
+            <input class="form-control" type="text" name="descricao" id="descricao" placeholder="Descrição" #descricao="ngModel" [(ngModel)]="cursos.descricao" required>
         </div>
     </div>
     <div class="form-goup">
@@ -22,7 +22,7 @@
             <label class="control-label" for="email">E-mail contato</label>
         </div>
         <div class="col-sm-12">
-            <input class="form-control" type="text" name="email" id="email" placeholder="e-mail contato" #email="ngModel" [(ngModel)]="cursos.email">
+            <input email class="form-control" type="email" name="email" id="email" placeholder="e-mail contato" #email="ngModel" [(ngModel)]="cursos.email">
         </div>
     </div>
 
